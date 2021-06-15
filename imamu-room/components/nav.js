@@ -45,7 +45,7 @@ export default function Nav() {
       >
         <div className="text-sm sm:flex-grow">
           <a
-            href="#responsive-header"
+            href="#"
             className="block mt-4 sm:inline-block sm:mt-0 text-white font-medium"
           >
             home
@@ -57,13 +57,13 @@ export default function Nav() {
             recipes
           </a>
           <a
-            href="#responsive-header"
+            href="about"
             className="block mt-4 sm:inline-block sm:mt-0 text-white ml-4 font-medium"
           >
             about
           </a>
           <a
-            href="#responsive-header"
+            href="contact"
             className="block mt-4 sm:inline-block sm:mt-0 text-white ml-4 font-medium"
           >
             contact
