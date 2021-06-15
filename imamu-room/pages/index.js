@@ -5,7 +5,7 @@ import Nav from '../components/nav';
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen py-2">
+    <div className="flex flex-col min-h-screen pb-2">
       <Head>
         <title>Imamu Room</title>
         <link rel="icon" href="/icons/Favicon/favicon.ico" />
