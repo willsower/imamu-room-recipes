@@ -1,15 +1,20 @@
-import Head from 'next/head'
+import Head from 'next/head';
+
+// Components
+import Nav from '../components/nav';
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div className="flex flex-col min-h-screen py-2">
       <Head>
         <title>Imamu Room</title>
         <link rel="icon" href="/icons/Favicon/favicon.ico" />
       </Head>
 
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-       
+      <Nav/>
+
+      <main className="flex flex-col w-full flex-1 px-20">
+        Test
       </main>
 
       <footer className="flex items-center justify-center w-full h-24 border-t">

@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* Import Font */
 @font-face {
@@ -10,4 +13,8 @@
 
 * {
     font-family: "CobblerSansMedium";
+}
+
+.bg-black {
+    background-color: #000;
 }
