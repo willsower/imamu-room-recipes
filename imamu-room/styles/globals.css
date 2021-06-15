@@ -18,3 +18,17 @@
 .bg-black {
     background-color: #000;
 }
+
+/* Logo color (brown) */
+
+.main-color {
+    background-color: #816759;
+}
+
+nav a:hover {
+    color: #E6B79E;
+}
+
+.text-right {
+    text-align: right;
+}
