@@ -1,0 +1,13 @@
+
+/* Import Font */
+@font-face {
+    font-family: "CobblerSansMedium";
+    src: url("/fonts/cobbler-sans-medium.ttf");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+* {
+    font-family: "CobblerSansMedium";
+}
