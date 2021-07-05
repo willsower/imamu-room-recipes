@@ -1,3 +1,5 @@
+import Search from "./search";
+
 export default function Nav() {
   return (
     <nav className="flex items-center justify-between bg-gray-50 p-6 border-b border-indigo-400">
@@ -8,6 +10,7 @@ export default function Nav() {
       </div>
 
       <div className="w-full block items-center w-auto">
+          <Search />
         <div>
           <a
             href="#"
