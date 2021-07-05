@@ -9,8 +9,11 @@ export default function Nav() {
         </span>
       </div>
 
+      <div className="items-center flex-shrink-0 text-indigo-400 mr-3 w-7/12 sm:w-8/12 md:w-9/12 content-center">
+        <Search />
+      </div>
+
       <div className="w-full block items-center w-auto">
-          <Search />
         <div>
           <a
             href="#"
