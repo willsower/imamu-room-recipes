@@ -1,12 +1,11 @@
 import Head from "next/head";
 import Link from "next/link";
-import Layout, { siteTitle } from "../components/layout";
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>{siteTitle}</title>
+        <title>Imamu-Room Recipes</title>
       </Head>
       <section>
         <p>[Your Self Introduction]</p>
