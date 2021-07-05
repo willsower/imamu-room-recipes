@@ -1,32 +1,18 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Link from "next/link";
+import Layout, { siteTitle } from "../components/layout";
 
 export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Imamu-Room Recipes</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <h1 className="title">
-        Read{' '}
-        <Link href="/recipes/first-recipe">
-          <a>this page!</a>
-        </Link>
-      </h1>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
+  <Layout home>
+    <Head>
+      <title>{siteTitle}</title>
+    </Head>
+    <section className={utilStyles.headingMd}>
+      <p>[Your Self Introduction]</p>
+      <p>
+        (This is a sample website - you’ll be building a site like this on{" "}
+        <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
+      </p>
+    </section>
+  </Layout>;
 }
