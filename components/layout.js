@@ -24,18 +24,17 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={}>
+      <header>
         {home ? (
           <>
             <Image
               priority
               src="/images/profile.jpg"
-              className={}
               height={144}
               width={144}
               alt={name}
             />
-            <h1 className={}>{name}</h1>
+            <h1>{name}</h1>
           </>
         ) : (
           <>
@@ -44,16 +43,15 @@ export default function Layout({ children, home }) {
                 <Image
                   priority
                   src="/images/profile.jpg"
-                  className={}
                   height={108}
                   width={108}
                   alt={name}
                 />
               </a>
             </Link>
-            <h2 className={}>
+            <h2>
               <Link href="/">
-                <a className={}>{name}</a>
+                <a>{name}</a>
               </Link>
             </h2>
           </>
@@ -61,7 +59,7 @@ export default function Layout({ children, home }) {
       </header>
       <main>{children}</main>
       {!home && (
-        <div className={}>
+        <div>
           <Link href="/">
             <a>← Back to home</a>
           </Link>
