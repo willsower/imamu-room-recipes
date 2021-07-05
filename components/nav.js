@@ -1,4 +1,4 @@
-export default function Home() {
+export default function Nav() {
   return (
     <nav className="flex items-center justify-between bg-gray-50 p-6 border-b border-indigo-400">
       <div className="flex items-center flex-shrink-0 text-indigo-400 mr-6">
