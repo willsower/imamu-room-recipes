@@ -13,17 +13,6 @@ export default function Nav() {
         <div className="flex-shrink-0 text-indigo-400 mr-3 w-7/12 sm:w-8/12 md:w-9/12">
           <Search />
         </div>
-
-        <div className="w-full block items-center w-auto">
-          <div>
-            <a
-              href="#"
-              className="inline-block text-sm px-4 py-2 leading-none border rounded text-indigo-400 border-indigo-400 hover:border-transparent hover:text-indigo-500 hover:bg-indigo-400 mt-0 float-right"
-            >
-              About
-            </a>
-          </div>
-        </div>
       </div>
       <div className = "flex items-center bg-gray-50 p-4 border-b border-gray-200 w-full custom-horizontal-nav">
         <a>Breakfast</a>

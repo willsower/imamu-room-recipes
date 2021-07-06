@@ -32,7 +32,7 @@ a {
 
 .custom-horizontal-nav a {
   text-align: center;
-  width: 24.5%;
+  width: 100px;
   background-color: #eee;
   float: none;
   height: 90%;
