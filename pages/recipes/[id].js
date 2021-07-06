@@ -19,18 +19,20 @@ export async function getStaticPaths() {
 }
 
 export default function Recipe({ recipeData }) {
+  console.log(recipeData)
   return (
     <>
       <Head>
         <title>{recipeData.card_title}</title>
       </Head>
-      {recipeData.title}
+      {/* {recipeData.title}
       {recipeData.card_title}
       {recipeData.youtube_title}
       {recipeData.youtube_link}
-      {recipeData.date}
+      {recipeData.date} */}
 
-      <div dangerouslySetInnerHTML={{ __html: recipeData.contentHtml }} />
+
+      {/* <div dangerouslySetInnerHTML={{ __html: recipeData.contentHtml }} /> */}
     </>
   );
 }
