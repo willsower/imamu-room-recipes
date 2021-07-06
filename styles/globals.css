@@ -18,3 +18,34 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/* My Custom CSS */
+
+/* Horizontal scrollable nav portion */
+
+.custom-horizontal-nav {
+  white-space: nowrap;
+  position: relative;
+  overflow-x:scroll;
+  overflow-y:hidden;
+}
+
+.custom-horizontal-nav a {
+  text-align: center;
+  float: none;
+  margin-right: 5px;
+  padding: 0 20px;
+  display: inline-block;
+  zoom: 1;
+  color: #7f9cf5;
+  border-radius: 15px;
+}
+
+.custom-horizontal-nav a:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #eee;
+}
