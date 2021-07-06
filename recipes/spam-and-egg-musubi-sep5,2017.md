@@ -1,7 +1,7 @@
 ---
 title: 'Spam and Egg Onigiri (Musubi) / Lunch'
 date: '2017-09-05'
-image: '/images/sep-2017/spam-and-egg-musubi-sep5-2017'
+image: '/images/sep-2017/spam-and-egg-musubi-sep5-2017.png'
 ---
 
 This is perfect for lunch or picnic snack.
