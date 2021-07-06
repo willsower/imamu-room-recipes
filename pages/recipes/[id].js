@@ -23,6 +23,21 @@ export async function getStaticPaths() {
 }
 
 export default function Recipe({ recipeData }) {
+  function readIngedients(ingredients) {
+    return (
+      <>
+        {ingredients.map((ingred) => (
+          <>
+            {ingred.substr(0, 7) == "[TITLE]" ? (
+              <div className="mt-2 font-semibold">{ingred.substr(8)}</div>
+            ) : (
+              <li>{ingred}</li>
+            )}
+          </>
+        ))}
+      </>
+    );
+  }
   return (
     <div className="min-h-screen relative">
       <Head>
@@ -50,24 +65,29 @@ export default function Recipe({ recipeData }) {
         </div>
         {recipeData.youtube_link}
         {/* Video */}
-        <iframe width="560" height="315" src={recipeData.youtube_link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen className = "m-auto mt-4"></iframe>
+        <iframe
+          width="560"
+          height="315"
+          src={recipeData.youtube_link}
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          className="m-auto mt-4"
+        ></iframe>
 
         {/* Ingredients */}
         <div className="border p-2 mt-4">
           <span className="text-2xl">Ingredients</span> <br />
-          <div className = "text-left p-4">
-            {recipeData.Ingredients.map((ingred) => (
-              <>
-                <li>{ingred}</li>
-              </>
-            ))}
+          <div className="text-left p-4">
+            {readIngedients(recipeData.Ingredients)}
           </div>
         </div>
 
         {/* Instructions */}
         <div className="border p-2 mt-4">
           <span className="text-2xl">Instructions</span> <br />
-          <div className = "text-left p-4">
+          <div className="text-left p-4">
             {recipeData.Instructions.map((instruct) => (
               <>
                 {instruct} <br />
