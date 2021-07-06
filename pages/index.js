@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import Nav from "../components/nav";
+import Header from "../components/header";
 
 export default function Home() {
   return (
@@ -8,7 +9,8 @@ export default function Home() {
       <Head>
         <title>Imamu-Room Recipes</title>
       </Head>
-      <Nav/>
+      <Header />
+      <Nav />
       <section>
         <p>[Your Self Introduction]</p>
         <p>
