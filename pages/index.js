@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 import Nav from "../components/Nav/nav";
 import Header from "../components/Header/header";
 import Footer from "../components/Footer/footer";
@@ -16,9 +17,17 @@ export async function getStaticProps() {
 
 export default function Home({ allRecipeData }) {
   function recipeCard(title, id, date, image) {
+    // var imgPath = image;
+    var imgPath = "/images/2017/aug-2017/crispy-tempura-aug27-2017.png";
     return (
       <>
-      <div className = "block w-48 h-48 bg-indigo-300 mb-2">
+      <div className = "block w-48 h-48 bg-indigo-300 p-2 mr-2 mb-2">
+        {imgPath}
+        <Image 
+          src = {imgPath}
+          height = "50px"
+          width = "50px"
+        />
       {title}
         <br />
         {id}
@@ -41,7 +50,7 @@ export default function Home({ allRecipeData }) {
         <Nav />
       </div>
 
-      <section className="bg-red-300 h-36 ml-6 mr-6">
+      <section className="flex flex-wrap bg-red-300 h-auto ml-6 mr-6">
         {allRecipeData.map(({ id, date, title, image }) => (
           <div className="" key={id}>
             {recipeCard(title, id, date, image)}
