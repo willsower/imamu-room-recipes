@@ -17,7 +17,7 @@ export async function getStaticProps() {
 
 export default function Home({ allRecipeData }) {
   function recipeCard(title, id, date, image) {
-    var imgPath = image;
+    var imgPath = "/images/sep-2017/spam-and-egg-musubi-sep5-2017.png";
     return (
       <>
       <div className = "block w-48 h-48 bg-indigo-300 p-2 mr-2 mb-2">

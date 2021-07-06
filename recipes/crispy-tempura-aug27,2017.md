@@ -1,7 +1,7 @@
 ---
 title: 'Crispy Tempura - Deep Fried Vegetables and Seafood'
 date: '2017-08-27'
-image: '/images/aug-2017/crispy-tempura-aug27-2017.png'
+image: '/images/2017/aug-2017/crispy-tempura-aug27-2017.png'
 ---
 
 Tempura ( deep-fried vegetables and seafood ) Japanese cuisine
