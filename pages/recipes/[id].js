@@ -23,8 +23,6 @@ export async function getStaticPaths() {
 }
 
 export default function Recipe({ recipeData }) {
-  console.log(recipeData);
-
   return (
     <div className="min-h-screen relative">
       <Head>
@@ -50,7 +48,7 @@ export default function Recipe({ recipeData }) {
             className="w-full h-full object-cover"
           ></img>
         </div>
-
+        {recipeData.youtube_link}
         {/* Video */}
         <iframe width="560" height="315" src={recipeData.youtube_link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen className = "m-auto mt-4"></iframe>
 

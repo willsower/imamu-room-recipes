@@ -2,7 +2,7 @@
 title: 'Spam and Egg Musubi'
 youtube_title: 'Spam and Egg Onigiri (Musubi) / Lunch'
 card_title: 'Spam and Egg Musubi'
-youtube_link: 'https://www.youtube.com/watch?v=6aZoDByqKlk'
+youtube_link: 'https://www.youtube.com/embed/UX0lbqjA2eA'
 date: '2017-09-05'
 image: '/images/2017/sep-2017/spam-and-egg-musubi-sep5-2017.png'
 
