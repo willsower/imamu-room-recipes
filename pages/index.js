@@ -3,10 +3,11 @@ import Link from "next/link";
 import Nav from "../components/Nav/nav";
 import Header from "../components/Header/header";
 import Footer from "../components/Footer/footer";
-import { getSortedRecipeData } from "../lib/recipes";
+import { getSortedRecipesData } from "../lib/recipes";
+import { getDate } from "../lib/helper";
 
 export async function getStaticProps() {
-  const allRecipeData = getSortedRecipeData();
+  const allRecipeData = getSortedRecipesData();
   return {
     props: {
       allRecipeData,
@@ -15,30 +16,6 @@ export async function getStaticProps() {
 }
 
 export default function Home({ allRecipeData }) {
-  function getDate(date) {
-    var months = [
-      "Jan",
-      "Feb",
-      "Mar",
-      "Apr",
-      "May",
-      "Jun",
-      "Jul",
-      "Aug",
-      "Sep",
-      "Oct",
-      "Nov",
-      "Dec",
-    ];
-
-    var year = date.substr(0, 4);
-    var month = months[parseInt(date.substr(5, 2))];
-    var day = parseInt(date.substr(8, 2));
-
-    var newDate = month + " " + day + ", " + year;
-
-    return newDate;
-  }
   function recipeCard(id, card_title, date, image) {
     return (
       <Link href={`/recipes/${id}`}>
