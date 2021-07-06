@@ -1,8 +1,8 @@
 ---
 title: 'Crispy Tempura - Deep Fried Vegetables and Seafood'
-youtube-title: 'Crispy Tempura - Deep Fried Vegetables and Seafood'
-card-title: 'Crispy Tempura'
-youtube-link: 'https://www.youtube.com/watch?v=6aZoDByqKlk'
+youtube_title: 'Crispy Tempura - Deep Fried Vegetables and Seafood'
+card_title: 'Crispy Tempura'
+youtube_link: 'https://www.youtube.com/watch?v=6aZoDByqKlk'
 date: '2017-08-27'
 image: '/images/2017/aug-2017/crispy-tempura-aug27-2017.png'
 ---

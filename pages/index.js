@@ -74,7 +74,7 @@ export default function Home({ allRecipeData }) {
       </div>
 
       <section className="flex flex-wrap h-auto ml-6 mr-6 mt-4 pb-12 justify-center">
-        {allRecipeData.map(({ id, date, title, image }) => (
+        {allRecipeData.map(({ id, date, card_title, image }) => (
           <div className="" key={id}>
             {recipeCard(title, date, image)}
           </div>
