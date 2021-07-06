@@ -16,19 +16,22 @@ export async function getStaticProps() {
 
 export default function Home({allRecipeData}) {
   return (
-    <>
+    <div className = "min-h-screen relative">
       <Head>
         <title>Imamu-Room Recipes</title>
       </Head>
 
-      <Header />
-      <Nav />
+      {/* <div className = "w-full top-0 fixed"> */}
+      <div>
+        <Header />
+        <Nav />
+      </div>
 
-      <section className = "bg-red-300 h-screen">
+      <section className = "bg-red-300 h-24">
 
       </section>
 
       <Footer />
-    </>
+    </div>
   );
 }
