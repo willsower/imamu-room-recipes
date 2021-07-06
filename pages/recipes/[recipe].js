@@ -1,30 +1,35 @@
-import { getAllRecipeIds, getRecipeData } from '../../lib/recipes'
+import { getAllRecipeIds, getRecipeData } from "../../lib/recipes";
 
 export async function getStaticProps({ params }) {
-  const recipeData = getRecipeData(params.id)
+  const recipeData = await getRecipeData(params.id);
   return {
     props: {
-      recipeData
-    }
-  }
+      recipeData,
+    },
+  };
 }
 
 export async function getStaticPaths() {
-  const paths = getAllRecipeIds()
+  const paths = getAllRecipeIds();
   return {
     paths,
-    fallback: false
-  }
+    fallback: false,
+  };
 }
 
-export default function Recipe({recipeData}) {
+export default function Recipe({ recipeData }) {
   return (
     <>
+      <Head>
+        <title>{recipeData.card - title}</title>
+      </Head>
       {recipeData.title}
-      {recipeData.card-title}
-      {recipeData.youtube-title}
-      {recipeData.youtube-link}
+      {recipeData.card - title}
+      {recipeData.youtube - title}
+      {recipeData.youtube - link}
       {recipeData.date}
+
+      <div dangerouslySetInnerHTML={{ __html: recipeData.contentHtml }} />
     </>
   );
 }
