@@ -24,7 +24,7 @@ export default function Home({allRecipeData}) {
       <Header />
       <Nav />
 
-      <section className = "bg-red-300 h-24">
+      <section className = "bg-red-300 h-screen">
 
       </section>
 
