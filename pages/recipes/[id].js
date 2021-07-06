@@ -63,17 +63,15 @@ export default function Recipe({ recipeData }) {
             className="w-full h-full object-cover"
           ></img>
         </div>
-        {recipeData.youtube_link}
+
         {/* Video */}
         <iframe
-          width="560"
-          height="315"
           src={recipeData.youtube_link}
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
-          className="m-auto mt-4"
+          className="m-auto mt-4 w-9/12 h-48 sm:h-72 md:h-90 lg:h-96"
         ></iframe>
 
         {/* Ingredients */}
