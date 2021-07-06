@@ -33,11 +33,14 @@ export default function Recipe({ recipeData }) {
       <Header />
       <Nav />
 
-      <div className = "text-center">
+      {/* Body */}
+      <div className = "text-center w-10/12 m-auto">
+        {/* Title and Date */}
         <h1 className = "mt-4 text-4xl">{recipeData.title}</h1>
-        {/* Image */}
         <p>{getDate(recipeData.date)}</p>
-        <div className = "w-10/12 lg:w-9/12 h-auto sm:h-96 md:h-96 m-auto mt-4">
+
+        {/* Image */}
+        <div className = "lg:w-9/12 h-auto sm:h-96 md:h-96 m-auto mt-4">
           <img src={recipeData.image} className="w-full h-full object-cover"></img>
         </div>
       </div>
