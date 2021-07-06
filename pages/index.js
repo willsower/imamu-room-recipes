@@ -39,10 +39,10 @@ export default function Home({ allRecipeData }) {
 
     return newDate;
   }
-  function recipeCard(card_title, date, image) {
+  function recipeCard(id, card_title, date, image) {
     return (
-      <>
-        <a className="block w-72 h-72 bg-white mr-2 mb-2 border rounded-lg relative cursor-pointer hover:opacity-90">
+      <Link href={`/recipes/${id}`}>
+        <div className="block w-72 h-72 bg-white mr-2 mb-2 border rounded-lg relative cursor-pointer hover:opacity-90">
           <div className="w-full h-full rounded-lg imgWrap">
             <img src={image} className="w-full h-full object-cover"></img>
           </div>
@@ -56,8 +56,8 @@ export default function Home({ allRecipeData }) {
             {/* Date */}
             <div className="text-xs w-full">{getDate(date)}</div>
           </div>
-        </a>
-      </>
+        </div>
+      </Link>
     );
   }
 
@@ -76,7 +76,7 @@ export default function Home({ allRecipeData }) {
       <section className="flex flex-wrap h-auto ml-6 mr-6 mt-4 pb-12 justify-center">
         {allRecipeData.map(({ id, date, card_title, image }) => (
           <div className="" key={id}>
-            {recipeCard(card_title, date, image)}
+            {recipeCard(id, card_title, date, image)}
           </div>
         ))}
       </section>
