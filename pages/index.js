@@ -42,15 +42,11 @@ export default function Home({ allRecipeData }) {
   function recipeCard(card_title, date, image) {
     return (
       <>
-        <div className="block w-72 h-72 bg-white mr-2 mb-2 border rounded-lg relative">
-          <img
-            src={image}
-            className="w-full h-full object-cover rounded-lg"
-          ></img>
-          {/* <img
-            src={image}
-            className="w-full h-full object-cover opacity-75 hover:opacity-100 rounded-lg"
-          ></img> */}
+        <a className="block w-72 h-72 bg-white mr-2 mb-2 border rounded-lg relative cursor-pointer hover:opacity-90">
+          <div className="w-full h-full rounded-lg imgWrap">
+            <img src={image} className="w-full h-full object-cover"></img>
+          </div>
+
           <div className="absolute bottom-2 text-white text-center w-full">
             {/* Title */}
             <div className="text-xs uppercase font-bold w-full mb-1">
@@ -58,11 +54,9 @@ export default function Home({ allRecipeData }) {
             </div>
 
             {/* Date */}
-            <div className="text-xs w-full">
-              {getDate(date)}
-            </div>
+            <div className="text-xs w-full">{getDate(date)}</div>
           </div>
-        </div>
+        </a>
       </>
     );
   }
