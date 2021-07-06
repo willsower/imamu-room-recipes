@@ -1,5 +1,8 @@
 ---
-title: 'Spam and Egg Onigiri (Musubi) / Lunch'
+title: 'Spam and Egg Musubi'
+youtube-title: 'Spam and Egg Onigiri (Musubi) / Lunch'
+card-title: 'Spam and Egg Musubi'
+youtube-link: 'https://www.youtube.com/watch?v=6aZoDByqKlk'
 date: '2017-09-05'
 image: '/images/2017/sep-2017/spam-and-egg-musubi-sep5-2017.png'
 ---
