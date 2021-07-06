@@ -45,10 +45,14 @@ export default function Home({ allRecipeData }) {
         <div className="block w-72 h-72 bg-white mr-2 mb-2 border rounded-lg relative">
           <img
             src={image}
-            className="w-full h-full object-cover opacity-75 hover:opacity-100 rounded-lg image-cover"
+            className="w-full h-full object-cover rounded-lg"
           ></img>
-          <div className="absolute bottom-8 left-2 text-white">
-            <span className="font-bold">Recipe:</span> <span>{title}</span>
+          {/* <img
+            src={image}
+            className="w-full h-full object-cover opacity-75 hover:opacity-100 rounded-lg"
+          ></img> */}
+          <div className="absolute bottom-2 left-2 text-white text-center">
+            <span className = "text-sm uppercase">{title}</span>
             <br />
             <span className="text-xs">{getDate(date)}</span>
           </div>
