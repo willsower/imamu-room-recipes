@@ -8,6 +8,7 @@ image: '/images/2017/aug-2017/crispy-tempura-aug27-2017.png'
 
 # Serving Size (Put None if nothing)
 Serves: 2
+Amount: None
 ---
 
 # Tempura ( deep-fried vegetables and seafood ) Japanese cuisine

@@ -3,11 +3,11 @@ import Link from "next/link";
 import Nav from "../components/Nav/nav";
 import Header from "../components/Header/header";
 import Footer from "../components/Footer/footer";
-import { getSortedRecipeData } from "../lib/recipes";
+import { getSortedRecipesData } from "../lib/recipes";
 import { getDate } from "../lib/helper";
 
 export async function getStaticProps() {
-  const allRecipeData = getSortedRecipeData();
+  const allRecipeData = getSortedRecipesData();
   return {
     props: {
       allRecipeData,
