@@ -45,12 +45,12 @@ export default function Home({ allRecipeData }) {
         <div className="block w-72 h-72 bg-white mr-2 mb-2 border rounded-lg relative">
           <img
             src={image}
-            className="w-full h-full object-cover opacity-75 hover:opacity-100 rounded-lg"
+            className="w-full h-full object-cover opacity-75 hover:opacity-100 rounded-lg image-cover"
           ></img>
           <div className="absolute bottom-8 left-2 text-white">
             <span className="font-bold">Recipe:</span> <span>{title}</span>
             <br />
-            <span className="text-sm">{getDate(date)}</span>
+            <span className="text-xs">{getDate(date)}</span>
           </div>
         </div>
       </>
@@ -69,7 +69,7 @@ export default function Home({ allRecipeData }) {
         <Nav />
       </div>
 
-      <section className="flex flex-wrap h-auto ml-6 mr-6 mt-4 pb-12">
+      <section className="flex flex-wrap h-auto ml-6 mr-6 mt-4 pb-12 justify-center">
         {allRecipeData.map(({ id, date, title, image }) => (
           <div className="" key={id}>
             {recipeCard(title, date, image)}
