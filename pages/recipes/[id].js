@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { getAllRecipeIds, getRecipeData } from "../../lib/recipes";
 
 export async function getStaticProps({ params }) {
@@ -21,12 +22,12 @@ export default function Recipe({ recipeData }) {
   return (
     <>
       <Head>
-        <title>{recipeData.card - title}</title>
+        <title>{recipeData.card_title}</title>
       </Head>
       {recipeData.title}
-      {recipeData.card - title}
-      {recipeData.youtube - title}
-      {recipeData.youtube - link}
+      {recipeData.card_title}
+      {recipeData.youtube_title}
+      {recipeData.youtube_link}
       {recipeData.date}
 
       <div dangerouslySetInnerHTML={{ __html: recipeData.contentHtml }} />
