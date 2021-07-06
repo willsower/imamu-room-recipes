@@ -1,6 +1,10 @@
 ---
 title: 'Crispy Tempura - Deep Fried Vegetables and Seafood'
+youtube_title: 'Crispy Tempura - Deep Fried Vegetables and Seafood'
+card_title: 'Crispy Tempura'
+youtube_link: 'https://www.youtube.com/watch?v=6aZoDByqKlk'
 date: '2017-08-27'
+image: '/images/2017/aug-2017/crispy-tempura-aug27-2017.png'
 ---
 
 Tempura ( deep-fried vegetables and seafood ) Japanese cuisine
