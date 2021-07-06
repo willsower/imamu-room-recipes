@@ -8,22 +8,11 @@ image: '/images/2017/aug-2017/crispy-tempura-aug27-2017.png'
 
 # Serving Size (Put None if nothing)
 Serves: 2
-
-# Ingredienets
-Recipe_Ingredients:
-  Title: "Tempura (Deep-Fried Vegetables and Seafood)"
-    # Ingredients:
-    #   - "Asparagus"
-    #   - "Carrots"
-    #   - "Shishitou"
-    #   - "Shitake Mushrooms"
-    #   - "Eggplant"
-    #   - "Black Tiger Prawn"
-    #   - "Squid Tentacle"
 ---
 
-Tempura ( deep-fried vegetables and seafood ) Japanese cuisine
-【Ingredients】- Serves 2
+# Tempura ( deep-fried vegetables and seafood ) Japanese cuisine
+
+#### 【Ingredients】- Serves 2
 4 thick asparagus
 4 slices Carrots
 4 pieces Shishitou
@@ -32,14 +21,14 @@ Tempura ( deep-fried vegetables and seafood ) Japanese cuisine
 4 black tiger prawn
 Some squid tentacle
 
-【Dipping Sauce】
+#### 【Dipping Sauce】
 10×10cm komb
 200ml water
 50ml less sodium soy sauce
 50ml mirin
 Katuobushi 10g
 
-【Tempura batter】
+#### 【Tempura batter】
 3/4 cup cake flour
 2 tbsp potato starch
 2 pinch of salt
@@ -47,16 +36,16 @@ Katuobushi 10g
 1 tbsp Japanese mayonnaise
 ＊I totally forgot to measure the water in the video! You can also make it by freehand.. It's better to make it not too thick and not too thin.
 
-【Topping】
+#### 【Topping】
 Paper
 Lime
 Grated daikon radish
 
-【Oil】
+#### 【Oil】
 Add 30% sesame oil to Canola oil.
 
+### Instructions
 Cook start!
-
 1.  Cut off the roots of asparagus.
 2.  Cut carrot into slices.
 3.  Cut the eggplant into pieces
