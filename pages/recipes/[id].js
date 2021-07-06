@@ -51,13 +51,16 @@ export default function Recipe({ recipeData }) {
           ></img>
         </div>
 
+        {/* Video */}
+        <iframe width="560" height="315" src={recipeData.youtube_link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen className = "m-auto mt-4"></iframe>
+
         {/* Ingredients */}
         <div className="border p-2 mt-4">
           <span className="text-2xl">Ingredients</span> <br />
           <div className = "text-left p-4">
             {recipeData.Ingredients.map((ingred) => (
               <>
-                {ingred} <br />
+                <li>{ingred}</li>
               </>
             ))}
           </div>
