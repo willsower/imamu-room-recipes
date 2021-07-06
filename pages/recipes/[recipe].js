@@ -1,4 +1,4 @@
-import { getAllRecipeIds, getRecipeData } from '../../lib/posts'
+import { getAllRecipeIds, getRecipeData } from '../../lib/recipes'
 
 export async function getStaticProps({ params }) {
   const recipeData = getRecipeData(params.id)
@@ -17,6 +17,14 @@ export async function getStaticPaths() {
   }
 }
 
-export default function Recipe() {
-  return <></>;
+export default function Recipe({recipeData}) {
+  return (
+    <>
+      {recipeData.title}
+      {recipeData.card-title}
+      {recipeData.youtube-title}
+      {recipeData.youtube-link}
+      {recipeData.date}
+    </>
+  );
 }
