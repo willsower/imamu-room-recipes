@@ -32,12 +32,20 @@ a {
 
 .custom-horizontal-nav a {
   text-align: center;
-  width: 100px;
-  background-color: #eee;
   float: none;
-  height: 90%;
   margin-right: 5px;
+  padding: 0 20px;
   display: inline-block;
   zoom: 1;
   color: #7f9cf5;
+  border-radius: 15px;
+}
+
+.custom-horizontal-nav a:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #eee;
 }
