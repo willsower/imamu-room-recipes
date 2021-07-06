@@ -1,7 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
 import Nav from "../components/Nav/nav";
-import Header from "../components/header";
+import Header from "../components/Header/header";
+import Footer from "../components/Footer/footer";
 import { getSortedRecipeData } from '../lib/recipes';
 
 export async function getStaticProps() {
@@ -26,6 +27,8 @@ export default function Home({allRecipeData}) {
       <section className = "bg-red-300 h-24">
 
       </section>
+
+      <Footer />
     </>
   );
 }
