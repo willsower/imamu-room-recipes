@@ -29,4 +29,9 @@ Instructions:
     - "6. Heat the oil 170℃.( You can check the temperature with chopsticks. Dip a chopstick into the oil. If the oil starts steadily bubbling, the oil is ready for frying. Or you can also check with a little bread. Just drop a little bread into the oil."
     - "7. Deep fry until it is nicely browned. It's for 4 to 5 min. ( It's about 2 min each side and deep fry 180 for last 1 min.) "
     - "8. Put Tonkatsu diagonally  to drain excess oil."
+
+tags:
+    - "Lunch"
+    - "Dinner"
+    - "Meat"
 ---

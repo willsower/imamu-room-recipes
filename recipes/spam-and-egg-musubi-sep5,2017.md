@@ -28,6 +28,12 @@ Instructions:
     - "8. Place the spam on it."
     - "9. Put the seaweeds on the rice ball with little water."
     - "10. Wrap rice ball tightly with plastic wrap and shape it again."
+
+tags:
+    - "Lunch"
+    - "Snack"
+    - "Appetizer"
+    - "Meat"
 ---
 
 This is perfect for lunch or picnic snack.
