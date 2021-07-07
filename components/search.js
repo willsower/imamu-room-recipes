@@ -52,9 +52,9 @@ export default function Search() {
       </div>
 
       { active && results.length > 0 && (
-        <ul className={styles.results}>
+        <ul>
           {results.map(({ id, title }) => (
-            <li className={styles.result} key={id}>
+            <li key={id}>
               <Link href="/recipes/[id]" as={`/recipes/${id}`}>
                 <a>{title}</a>
               </Link>
