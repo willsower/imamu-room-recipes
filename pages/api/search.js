@@ -6,18 +6,27 @@ const recipes =
     : getSortedRecipesData();
 
 export default (req, res) => {
+  // Search API implemented, looks in the title, youtube title, card title, ingredient list, and any tags associated
+  const results = req.query.q
+    ? recipes.filter((recipe) =>
+        recipe.title.toLowerCase().includes(req.query.q.toLowerCase()) ||
+        recipe.youtube_title
+          .toLowerCase()
+          .includes(req.query.q.toLowerCase()) ||
+        recipe.card_title.toLowerCase().includes(req.query.q.toLowerCase()) ||
+        recipe.tags.filter((tag) => {
+          return tag.toLowerCase().includes(req.query.q.toLowerCase());
+        }).length > 0
+          ? true
+          : false ||
+            recipe.Ingredients.filter((ingred) => {
+              return ingred.toLowerCase().includes(req.query.q.toLowerCase());
+            }).length > 0
+          ? true
+          : false
+      )
+    : [];
 
-    const results = req.query.q
-      ? recipes.filter((recipe) =>
-          recipe.title.toLowerCase().includes(req.query.q.toLowerCase()) ||recipe.youtube_title.toLowerCase().includes(req.query.q.toLowerCase()) ||
-          recipe.card_title.toLowerCase().includes(req.query.q.toLowerCase()) || recipe.tags.filter((tag) => tag.toLowerCase().includes(req.query.q.toLowerCase())) || recipe.Ingredients.filter((ingred) => ingred.toLowerCase().includes(req.query.q.toLowerCase())))
-      : [];
-
-    // const results = req.query.q
-    // ? recipes.filter((recipe) =>
-    //     recipe.title.toLowerCase().includes(req.query.q.toLowerCase()) ||recipe.youtube_title.toLowerCase().includes(req.query.q.toLowerCase()) ||
-    //     recipe.card_title.toLowerCase().includes(req.query.q.toLowerCase()))
-    // : [];
   res.statusCode = 200;
   res.setHeader("Content-Type", "application/json");
   res.end(JSON.stringify({ results }));
