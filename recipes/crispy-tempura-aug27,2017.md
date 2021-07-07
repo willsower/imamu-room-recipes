@@ -59,6 +59,14 @@ Instructions:
     - "15. Set aside only flour then shift it to all ingredients. After that, dipping into Tempura batter."
     - "16. Deep fry from hard ingredients. ( Temperature of oil normally increases little by little.) To keeping right temperature, sometimes I turn off the power. Frying time / Carrot, eggplant (2min). Asparagus(1.5min). in the video, no asparagas... Shishotou(40 sec). Mushroom(1.5 min). Prawn and squid (1.5-2 min)"
     - "17. Let's serve on a dish!"
+
+tags:
+    - "Vegetables"
+    - "Dinner"
+    - "Lunch"
+    - "Seafood"
+    - "Fried"
+    - "Deep Fried"
 ---
 
 Tempura ( deep-fried vegetables and seafood ) Japanese cuisine
