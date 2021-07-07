@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "cache-posts": "node scripts/cache.js"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
@@ -20,5 +21,10 @@
     "autoprefixer": "^10.2.6",
     "postcss": "^8.3.5",
     "tailwindcss": "^2.2.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm cache-posts && git add cache/data.js"
+    }
   }
 }
