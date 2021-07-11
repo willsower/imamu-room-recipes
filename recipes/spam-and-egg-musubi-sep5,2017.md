@@ -7,7 +7,7 @@ date: '2017-09-05'
 image: '/images/2017/sep-2017/spam-and-egg-musubi-sep5-2017.png'
 
 # Serving Size (Put None if nothing)
-Serves: None
+Serves: "None"
 Amount: "6 Pieces Musubi"
 
 Ingredients:
