@@ -3,7 +3,7 @@ title: 'Teriyaki Chicken Bento Box: Salmon & Egg Rice'
 youtube_title: 'Teriyaki Chicken Bento Box: Salmon & Egg Rice'
 card_title: 'Teriyaki Chicken Bento Box'
 youtube_link: 'https://www.youtube.com/embed/ryaPACxFSFk'
-date: '2018-12-08'
+date: '2019-03-27'
 image: '/images/2019/mar-2019/teriyaki-chicken-bento-mar27,2019.png'
 
 # Serving Size (Put None if nothing)
