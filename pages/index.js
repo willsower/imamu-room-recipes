@@ -45,12 +45,12 @@ export default function Home({ allRecipeData }) {
       </Head>
 
       {/* <div className = "w-full top-0 fixed"> */}
-      <div>
+      <div class="sticky top-0 z-50">
         <Header />
         <Nav />
       </div>
 
-      <section className="flex flex-wrap h-auto ml-6 mr-6 mt-4 pb-12 justify-center">
+      <section className="flex flex-wrap h-auto ml-6 mr-6 mt-4 pb-12 justify-center relative">
         {allRecipeData.map(({ id, date, card_title, image }) => (
           <div className="" key={id}>
             {recipeCard(id, card_title, date, image)}
